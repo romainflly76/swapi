@@ -1,0 +1,232 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>SWAPI</title>
+  <meta name="description" content="site API STAR WARS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://fr.allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- ##########################################################################################################################################################
+                                                                      Header
+  ########################################################################################################################################################## -->
+  <header>
+    <div id="relative">
+      <div id="layer"></div>
+      <img id="logo" src="img/star-wars-logo-icon-17.jpg" alt="logo icone SW" class="img-fluid"></img>
+
+
+    </div>
+
+
+    <!-- ##########################################################################################################################################################
+                                                                      NAVBAR
+  ########################################################################################################################################################## -->
+    <ul id="navbar" class="nav justify-content-center bg-black">
+      <li class="nav-item">
+        <a class="nav-link active text-white" aria-current="page" href="#"><i class="fas fa-jedi"></i> LINK
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#"><i class="fab fa-galactic-senate"></i> LINK 2
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#"><i class="fab fa-old-republic"></i> LINK 3
+        </a>
+      </li>
+    </ul>
+  </header>
+  <!-- ##########################################################################################################################################################
+                                                                      CARD
+  ########################################################################################################################################################## -->
+
+  <section class="articles">
+    <h2></h2>
+    <div class="row mt-3">
+      <div class="col-10 col-sm-6 col-lg-4 mt-3">
+        <article id="video" class="card">
+          <video class="video-fluid z-depth-1" autoplay loop controls muted>
+            <source src="vids/Personnages.mp4" type="video/mp4" />
+          </video>
+          <button onclick="getStarWarsPers()" type="button" class="btn btn-light">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Personnages
+            </a>
+          </button>
+          <ul id="starwarslist"></ul>
+
+        </article>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mt-3">
+        <article id="video" class="card">
+          <video class="video-fluid z-depth-1" autoplay loop controls muted>
+            <source src="vids/Planets.mp4" type="video/mp4" />
+          </video>
+          <button onclick="getStarWarsPlanets()" type="button" class="btn btn-light">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Planets
+            </a>
+          </button>
+          <ul id="listPlantes"></ul>
+        </article>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mt-3">
+        <article id="video" class="card">
+          <video class="video-fluid z-depth-1" autoplay loop controls muted>
+            <source src="vids/vehicles.mp4" type="video/mp4" />
+          </video>
+          <button onclick="getStarWarsVehicles()" type="button" class="btn btn-light">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Vehicles
+            </a>
+          </button>
+          <ul id="listVehicles"></ul>
+        </article>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mt-3">
+        <article id="video" class="card">
+          <video class="video-fluid z-depth-1" autoplay loop controls muted>
+            <source src="vids/films.mp4" type="video/mp4" />
+          </video>
+          <button onclick="getStarWarsFilms()" type="button" class="btn btn-light">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Films
+            </a>
+          </button>
+          <ul id="listFilms"></ul>
+        </article>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mt-3">
+        <article id="video" class="card">
+          <video class="video-fluid z-depth-1" autoplay loop controls muted>
+            <source src="vids/starships.mp4" type="video/mp4" />
+          </video>
+          <button onclick="getStarWarsStarships()" type="button" class="btn btn-light">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Starships
+            </a>
+          </button>
+          <ul id="listStarships"></ul>
+        </article>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mt-3">
+        <article id="video" class="card">
+          <video class="video-fluid z-depth-1" autoplay loop controls muted>
+            <source src="vids/species.mp4" type="video/mp4" />
+          </video>
+          <button onclick="getStarWarsSpecies()" type="button" class="btn btn-light">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Species
+            </a>
+          </button>
+          <ul id="listSpecies"></ul>
+
+        </article>
+      </div>
+  </section>
+
+  <!-- ##########################################################################################################################################################
+                                                                      Footer
+  ########################################################################################################################################################## -->
+  <footer class="bg-dark text-center text-white mt-5">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Add your site or application content here -->
+  <p></p>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
