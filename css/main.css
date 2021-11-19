@@ -158,12 +158,22 @@ ul {
   font-size: 15px;
 }
 button {
+  font-size: 5px;
+}
+#oCategorie {
+  font-size: 8px;
+}
+#oSaisie {
+  font-size: 5px;
+}
+#recherche {
+  font-size: 8px;
 }
 #swapi {
   font-size: 30px;
   color: #f5e942;
 }
-/* ###############################################   Rules icones  ###################################################### */
+/* ###############################################   Rules icones/Search/...  ###################################################### */
 @media screen and (min-width: 970px) {
   i {
     font-size: 50px;
@@ -174,6 +184,15 @@ button {
   }
   #swapi {
     font-size: 50px;
+  }
+  #oCategorie {
+    font-size: 20px;
+  }
+  #oSaisie {
+    font-size: 20px;
+  }
+  #recherche {
+    font-size: 20px;
   }
 }
 /* ###############################################   Rules Video  ###################################################### */
