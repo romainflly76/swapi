@@ -19,5 +19,3 @@ httpRequest.onreadystatechange = function () {
 };
 httpRequest.open("GET", "https://swapi.dev/api");
 httpRequest.send();
-
-// ************************* Planets **************************
