@@ -22,8 +22,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="css/normalize.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css">-->
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="style.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -36,7 +37,8 @@
   <header>
     <div id="relative">
       <div id="layer"></div>
-      <img id="logo" src="img/star-wars-logo-icon-17.jpg" alt="logo icone SW" class="img-fluid"></img>
+      <!-- <img id="logo" src="img/star-wars-logo-icon-17.jpg" alt="logo icone SW" class="img-fluid"></img> -->
+      <h1>STAR WARS</h1>
 
 
     </div>
@@ -45,145 +47,48 @@
     <!-- ##########################################################################################################################################################
                                                                       NAVBAR
   ########################################################################################################################################################## -->
-    <ul id="navbar" class="nav justify-content-center bg-black">
+    <ul id="navbar" class="nav justify-content-center">
       <li class="nav-item">
-        <a class="nav-link active text-white" aria-current="page" href="#"><i class="fas fa-jedi"></i> LINK
+        <a class="nav-link active text-white" aria-current="page" href="#"><i class="fas fa-jedi"></i> accueil
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#"><i class="fab fa-galactic-senate"></i> LINK 2
+        <a class="nav-link text-white" href="#"><i class="fab fa-galactic-senate"></i> recherche
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#"><i class="fab fa-old-republic"></i> LINK 3
+        <a class="nav-link text-white" href="#"><i class="fab fa-old-republic"></i> lien 1
         </a>
       </li>
     </ul>
   </header>
+
   <!-- ##########################################################################################################################################################
-                                                                      CARD
+                                                                      VIDEOS
   ########################################################################################################################################################## -->
-
-  <section class="articles">
-    <h2></h2>
-    <div class="row mt-3">
-      <div class="col-10 col-sm-6 col-lg-4 mt-3">
-        <article id="video" class="card">
-          <video class="video-fluid z-depth-1" autoplay loop controls muted>
-            <source src="vids/Personnages.mp4" type="video/mp4" />
-          </video>
-          <button onclick="getStarWars()" type="button" class="btn btn-light">
-            <a href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Personnages
-            </a>
-          </button>
-          <!-- <ul id="starwarslist"></ul> -->
-
-        </article>
-      </div>
-      <div class="col-10 col-sm-6 col-lg-4 mt-3">
-        <article id="video" class="card">
-          <video class="video-fluid z-depth-1" autoplay loop controls muted>
-            <source src="vids/Planets.mp4" type="video/mp4" />
-          </video>
-          <button onclick="getStarWars()" type="button" class="btn btn-light">
-            <a href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Planets
-            </a>
-          </button>
-          <!-- <ul id="listPlantes"></ul> -->
-        </article>
-      </div>
-      <div class="col-10 col-sm-6 col-lg-4 mt-3">
-        <article id="video" class="card">
-          <video class="video-fluid z-depth-1" autoplay loop controls muted>
-            <source src="vids/vehicles.mp4" type="video/mp4" />
-          </video>
-          <button onclick="getStarWars()" type="button" class="btn btn-light">
-            <a href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Vehicles
-            </a>
-          </button>
-          <!-- <ul id="listVehicles"></ul> -->
-        </article>
-      </div>
-      <div class="col-10 col-sm-6 col-lg-4 mt-3">
-        <article id="video" class="card">
-          <video class="video-fluid z-depth-1" autoplay loop controls muted>
-            <source src="vids/films.mp4" type="video/mp4" />
-          </video>
-          <button onclick="getStarWars()" type="button" class="btn btn-light">
-            <a href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Films
-            </a>
-          </button>
-          <!-- <ul id="listFilms"></ul> -->
-        </article>
-      </div>
-      <div class="col-10 col-sm-6 col-lg-4 mt-3">
-        <article id="video" class="card">
-          <video class="video-fluid z-depth-1" autoplay loop controls muted>
-            <source src="vids/starships.mp4" type="video/mp4" />
-          </video>
-          <button onclick="getStarWars()" type="button" class="btn btn-light">
-            <a href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Starships
-            </a>
-          </button>
-          <!-- <ul id="listStarships"></ul> -->
-        </article>
-      </div>
-      <div class="col-10 col-sm-6 col-lg-4 mt-3">
-        <article id="video" class="card">
-          <video class="video-fluid z-depth-1" autoplay loop controls muted>
-            <source src="vids/species.mp4" type="video/mp4" />
-          </video>
-          <button onclick="getStarWars()" type="button" class="btn btn-light">
-            <a href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Species
-            </a>
-          </button>
-          <!-- <ul id="listSpecies"></ul> -->
-
-        </article>
-      </div>
+  <div class="container justify-content-center mt-3">
+    <div id="video" class="row justify-content-center">
+      <video class="col-6  video-fluid z-depth-1" autoplay loop controls muted>
+        <source src="vids/Mon film 8.mp4" type="video/mp4" />
+      </video>
     </div>
-  </section>
+  </div>
 
-
+  <!-- ##########################################################################################################################################################
+                                                                      API
+  ########################################################################################################################################################## -->
   <main class="text-center py-4 darkblue">
-    <h2 class="text-white mar">Types de ressource disponible</h2>
+
+    <h2 class="text-white mar"></h2>
+
     <div id="swapi" class="text-white mb-5 swapi"></div>
+
   </main>
 
   <!-- ##########################################################################################################################################################
                                                                       Footer
   ########################################################################################################################################################## -->
-  <footer class="bg-dark text-center text-white mt-5">
+  <footer id="footer" class="text-center text-white mt-5" style="background-color: #0d0d0d;">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
       <!-- Section: Social media -->
@@ -211,9 +116,9 @@
     <!-- Grid container -->
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="text-center p-3" style="background-color: #0d0d0d;">
       © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      <a class="text-white" href="https://mdbootstrap.com/">STAR WARS</a>
     </div>
     <!-- Copyright -->
   </footer>
@@ -225,7 +130,7 @@
     crossorigin="anonymous"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main2.js"></script>
 
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

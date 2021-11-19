@@ -18,14 +18,14 @@ html {
 }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+     * Remove text-shadow in selection highlight:
+     * https://twitter.com/miketaylr/status/12228805301
+     *
+     * Vendor-prefixed and regular ::selection selectors cannot be combined:
+     * https://stackoverflow.com/a/16982510/7133471
+     *
+     * Customize the background color to match your design.
+     */
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -38,8 +38,8 @@ html {
 }
 
 /*
- * A better looking default horizontal rule
- */
+     * A better looking default horizontal rule
+     */
 
 hr {
   display: block;
@@ -51,10 +51,10 @@ hr {
 }
 
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+     * Remove the gap between audio, canvas, iframes,
+     * images, videos and the bottom of their containers:
+     * https://github.com/h5bp/html5-boilerplate/issues/440
+     */
 
 audio,
 canvas,
@@ -66,8 +66,8 @@ video {
 }
 
 /*
- * Remove default fieldset styles.
- */
+     * Remove default fieldset styles.
+     */
 
 fieldset {
   border: 0;
@@ -76,21 +76,35 @@ fieldset {
 }
 
 /*
- * Allow only vertical resizing of textareas.
- */
+     * Allow only vertical resizing of textareas.
+     */
 
 textarea {
   resize: vertical;
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+       Author's custom styles
+       ========================================================================== */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  background-color: #0d0d0d;
+  font-family: "star_jediregular";
+}
+@font-face {
+  font-family: "star_jediregular";
+  src: url("font/starjedi-webfont.woff2") format("woff2"),
+    url("font/starjedi-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+#navbar {
+  background-color: #0d0d0d;
 }
 
 #relative {
@@ -112,136 +126,83 @@ textarea {
   opacity: 40%;
 }
 
-#logo {
-  position: absolute;
-  font-size: large;
-
-  height: 70%;
-  top: 20%;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
+/* #logo {
+    position: absolute;
+    font-size: large;
+  
+    height: 70%;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  } */
 h1 {
-  font-family: "Star Jedi", arial;
+  font-family: "star_jediregular";
   font-size: 48px;
   text-shadow: 4px 4px 4px #aaa;
   color: #fff;
+
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
+
 i {
-  font-size: 50px;
+  font-size: 20px;
   color: #fff;
 }
 ul {
-  font-size: 20px;
+  font-size: 15px;
 }
 button {
-  height: 10vh;
 }
+#swapi {
+  font-size: 30px;
+}
+/* ###############################################   Rules icones  ###################################################### */
+@media screen and (min-width: 970px) {
+  i {
+    font-size: 50px;
+    color: #fff;
+  }
+  ul {
+    font-size: 20px;
+  }
+  #swapi {
+    font-size: 50px;
+  }
+}
+/* ###############################################   Rules Video  ###################################################### */
 #video {
-  margin: auto;
-  width: 30vw;
-  height: auto;
-  margin-top: 10vh;
+  display: none;
 }
-
-a {
-  position: relative;
-  padding: 25px 30px;
-  margin: 40px 0;
-  color: #03e9f4;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.5s;
-  letter-spacing: 4px;
-  overflow: hidden;
-  margin-right: 50px;
-}
-
-a:hover {
-  background: #03e9f4;
-  color: #050801;
-}
-a span {
-  position: absolute;
-  display: block;
-}
-
-a span:nth-child(1) {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
-  animation: animate1 1s linear infinite;
-}
-@keyframes animate1 {
-  0% {
-    left: -100%;
-  }
-  50%,
-  100% {
-    left: 100%;
+@media screen and (min-width: 770px) {
+  #video {
+    display: flex;
+    width: auto;
+    height: auto;
   }
 }
-a span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
-  animation: animate2 1s linear infinite;
-  animation-delay: 0.25s;
-}
-
-@keyframes animate2 {
-  0% {
-    top: -100%;
+/* ###############################################   Rules 4K  ###################################################### */
+@media screen and (min-width: 1300px) {
+  h1 {
+    font-size: 110px;
+    top: 20%;
   }
-  50%,
-  100% {
-    top: 100%;
+  i {
+    font-size: 70px;
+    color: #fff;
+  }
+  ul {
+    font-size: 60px;
+  }
+  #swapi {
+    font-size: 80px;
   }
 }
-a span:nth-child(3) {
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
-  animation: animate3 1s linear infinite;
-  animation-delay: 0.5s;
-}
-
-@keyframes animate3 {
-  0% {
-    right: -100%;
-  }
-  50%,
-  100% {
-    right: 100%;
-  }
-}
-a span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
-  animation: animate4 1s linear infinite;
-  animation-delay: 0.75s;
-}
-
-@keyframes animate4 {
-  0% {
-    bottom: -100%;
-  }
-  50%,
-  100% {
-    bottom: 100%;
-  }
-}
-
 /* ###############################################   MAIN   ###################################################### */
 
 .swapi {
@@ -249,19 +210,19 @@ a span:nth-child(4) {
 }
 
 .darkblue {
-  background-color: #1758a8;
+  background-color: #0d0d0d;
 }
 
 .mar {
   margin-bottom: 8vh;
 }
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+       Helper classes
+       ========================================================================== */
 
 /*
- * Hide visually and from screen readers
- */
+     * Hide visually and from screen readers
+     */
 
 .hidden,
 [hidden] {
@@ -269,13 +230,13 @@ a span:nth-child(4) {
 }
 
 /*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
+     * Hide only visually, but have it available for screen readers:
+     * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+     *
+     * 1. For long content, line feeds are not interpreted as spaces and small width
+     *    causes content to wrap 1 word per line:
+     *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+     */
 
 .sr-only {
   border: 0;
@@ -291,10 +252,10 @@ a span:nth-child(4) {
 }
 
 /*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
+     * Extends the .sr-only class to allow the element
+     * to be focusable when navigated to via the keyboard:
+     * https://www.drupal.org/node/897638
+     */
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
@@ -308,24 +269,24 @@ a span:nth-child(4) {
 }
 
 /*
- * Hide visually and from screen readers, but maintain layout
- */
+     * Hide visually and from screen readers, but maintain layout
+     */
 
 .invisible {
   visibility: hidden;
 }
 
 /*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+     * Clearfix: contain floats
+     *
+     * For modern browsers
+     * 1. The space content is one way to avoid an Opera bug when the
+     *    `contenteditable` attribute is included anywhere else in the document.
+     *    Otherwise it causes space to appear at the top and bottom of elements
+     *    that receive the `clearfix` class.
+     * 2. The use of `table` rather than `block` is only necessary if using
+     *    `:before` to contain the top-margins of child elements.
+     */
 
 .clearfix::before,
 .clearfix::after {
@@ -338,10 +299,10 @@ a span:nth-child(4) {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+       EXAMPLE Media Queries for Responsive Design.
+       These examples override the primary ('mobile first') styles.
+       Modify as content requires.
+       ========================================================================== */
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -355,10 +316,10 @@ a span:nth-child(4) {
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+       Print styles.
+       Inlined to avoid the additional HTTP request:
+       https://www.phpied.com/delay-loading-your-print-css/
+       ========================================================================== */
 
 @media print {
   *,
@@ -385,9 +346,9 @@ a span:nth-child(4) {
   }
 
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
@@ -404,9 +365,9 @@ a span:nth-child(4) {
   }
 
   /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
+       * Printing Tables:
+       * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+       */
   thead {
     display: table-header-group;
   }
