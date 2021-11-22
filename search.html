@@ -68,30 +68,50 @@
   ########################################################################################################################################################## -->
 
 
+    <div class="form-row text-center mt-5">
+        <div class="col-12">
+            <h2 class="text-warning">Recherchez un film</h2>
+        </div>
 
+    </div>
 
     <div class="container mt-5">
-        <form>
+        <input id="saisie" type="text" class="form-control" aria-label="Saisie de mots clés" placeholder="Films ?"
+            required="required">
+        <div class="input-group-prepend">
+            <div class="form-row text-center">
+                <div class="col-12">
+                    <button id="recherche" class="btn btn-warning mt-3" type="buton"
+                        onclick="getValue();">Recherche</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="output">
+
+    </div>
+
+    <ul id="output">
+
+    </ul>
+
+    <!-- <h2 class="row mt-5"> Cherchez les films de Star Wars </h2>
+
+    <div class="container mt-5">
+        <form action="">
             <fieldset>
-                <input id="oCategorieValeur" name="oCategorieValeur" type="hidden" value="0" />
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <button id="oCategorie" class="btn btn-warning dropdown-toggle" type="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catégorie</button>
-                        <div id="oCategorieListe" class="dropdown-menu">
-                            <a class="dropdown-item" data-valeur="0" href="#">Catégorie</a>
-                            <a class="dropdown-item" data-valeur="1" href="#">...</a>
-                        </div>
-                    </div>
-                    <input id="oSaisie" name="oSaisie" type="text" class="form-control" aria-label="Saisie de mots clés"
-                        placeholder="Mot(s) clé(s)" required="required">
-                    <div class="input-group-append">
-                        <button id="recherche" class="btn btn-warning" type="submit">Recherche</button>
-                    </div>
+
+
+                <input id="oSaisie" name="oSaisie" type="text" class="form-control" aria-label="Saisie de mots clés"
+                    placeholder="Mot(s) clé(s)" required="required">
+                <div class="input-group-append">
+                    <button id="recherche" class="btn btn-warning" type="submit">Recherche</button>
                 </div>
             </fieldset>
-        </form>
-    </div>
+
+        </form> -->
+
+
 
 
     <!-- ##########################################################################################################################################################
