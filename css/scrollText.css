@@ -1,0 +1,41 @@
+body {
+  background-color: #0d0d0d;
+  overflow: hidden;
+  font-family: "Roboto";
+  /* Abaisser le Wrapper de la moitié de la page*/
+  margin: 50% 0 0 0;
+  position: relative;
+}
+.wrapper {
+  display: flex;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  perspective: 450px;
+}
+.scroll-text {
+  color: #faed28;
+  font-size: 3vw;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-align: justify;
+  position: relative;
+  animation: scroll 60s linear forwards; /*Scroll automatiquement en ligne*/
+  transform: translateZ(-2500px);
+}
+h1,
+h2 {
+  text-align: center;
+}
+
+@keyframes scroll {
+  /* Scroll de bas en haut*/
+  from {
+    top: 0;
+  }
+  to {
+    top: -7500px;
+  }
+}
+
+/** CSS Perspective *******************/
