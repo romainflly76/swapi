@@ -19,11 +19,26 @@ function getValue() {
   console.log(input);
 
   btn.onclick = function () {
-    fetch("https://swapi.dev/api/" + input)
+    fetch("https://swapi.dev/api/people/" + input + "/")
       .then((reponse) => reponse.json())
-      .then((reponse2) => console.log(reponse2.results));
-    // {
-    //   output.textContent = `resultat: ${reponse2.name}`;
-    // }
+
+      .then((reponse2) => {
+        console.table(reponse2);
+
+        let ul = document.getElementById("output");
+
+        ul.innerHTML += `<li>${reponse2.name}</li>`;
+        ul.innerHTML += `<li>${reponse2.height}</li>`;
+        ul.innerHTML += `<li>${reponse2.mass}</li>`;
+        ul.innerHTML += `<li>${reponse2.hair_color}</li>`;
+        ul.innerHTML += `<li>${reponse2.skin_color}</li>`;
+        ul.innerHTML += `<li>${reponse2.eye_color}</li>`;
+        ul.innerHTML += `<li>${reponse2.birth_year}</li>`;
+        ul.innerHTML += `<li>${reponse2.gender}</li>`;
+        ul.innerHTML += `<li>${reponse2.films}</li>`;
+        ul.innerHTML += `<li>${reponse2.species}</li>`;
+        ul.innerHTML += `<li>${reponse2.vehicles}</li>`;
+        ul.innerHTML += `<li>${reponse2.starships}</li>`;
+      });
   };
 }
