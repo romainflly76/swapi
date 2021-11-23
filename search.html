@@ -76,24 +76,27 @@
     </div>
 
     <div class="container mt-5">
-        <input id="saisie" type="text" class="form-control" aria-label="Saisie de mots clés" placeholder="Films ?"
-            required="required">
-        <div class="input-group-prepend">
-            <div class="form-row text-center">
-                <div class="col-12">
-                    <button id="recherche" class="btn btn-warning mt-3" type="buton"
-                        onclick="getValue();">Recherche</button>
-                </div>
+        <form class="d-flex">
+            <input id="saisie" type="text" class="form-control" aria-label="Saisie de mots clés" placeholder="Films ?"
+                required="required">
+        </form>
+        <!-- <div class="input-group-prepend"> -->
+
+        <div class="form-row text-center">
+            <div class="col-12">
+                <button id="recherche" class="btn btn-warning mt-3" type="buton"
+                    onclick="getValue();">Recherche</button>
             </div>
         </div>
     </div>
-    <div id="output">
-
+    <!-- </form> -->
     </div>
 
-    <ul id="output">
+    <ul id="output" class="mt-5 m-5">
 
     </ul>
+
+
 
     <!-- <h2 class="row mt-5"> Cherchez les films de Star Wars </h2>
 
